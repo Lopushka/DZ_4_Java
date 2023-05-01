@@ -7,18 +7,18 @@ import java.util.LinkedList;
  */
 public class EX_1 {
     public static void main(String[] args) {
-        LinkedList<String> lister = new LinkedList<>();
-        lister.add("1");
-        lister.add("2");
-        lister.add("3");
-        lister.add("4");
-        lister.add("5");
+        LinkedList<Integer> lister = new LinkedList<>();
+        for (int i = 0; i < 6; i++) {
+            lister.add(i);
+        }
+        
+        
         
         System.out.println(lister);
         System.out.println("Перевёрнутый "+ revers(lister));
     }
-    public static LinkedList<String>revers(LinkedList<String> name){
-        LinkedList<String> result = new LinkedList<String>();
+    public static LinkedList<Integer>revers(LinkedList<Integer> name){
+        LinkedList<Integer> result = new LinkedList<Integer>();
 
         for (int i = name.size()-1; i >= 0; i--) {
             result.add(name.get(i));
